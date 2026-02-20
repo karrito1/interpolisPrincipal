@@ -9,7 +9,7 @@ export const getCiudadanos = async (req, res) => {
     res.json({ results });
   } catch (error) {
     res.status(500).json({
-      error: "error al listar los ciudadanos",
+      error: "error al listar los ciudadanos"+error,
     });
   }
 };
